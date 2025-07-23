@@ -351,6 +351,26 @@ nav {
     color: var(--navy);
 }
 
+.cta-button.pill {
+    background: transparent;
+    color: white;
+    border: 2px solid var(--gold);
+    padding: 0.6em 2em;
+    border-radius: 999px; /* pill shape */
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect - optional */
+.cta-button.pill:hover {
+    background: var(--gold);  /* yellow background */
+    color: var(--navy);       /* dark blue text */
+}
+
+
 /* Section Styles */
 section {
     padding: 80px 0;
