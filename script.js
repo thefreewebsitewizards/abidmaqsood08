@@ -720,21 +720,10 @@ New Quote Request Details:
     function showSuccessMessage() {
         // Create success notification
         const notification = document.createElement('div');
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            z-index: 10000;
-            font-family: Arial, sans-serif;
-        `;
+        notification.className = 'quote-notification';
         notification.innerHTML = `
             <i class="fas fa-check-circle"></i>
-            Please send the email to complete your quote request.
+            <span>Please send the email to complete your quote request.</span>
         `;
         
         document.body.appendChild(notification);
